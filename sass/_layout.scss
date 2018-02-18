@@ -14,12 +14,12 @@
  body {
      background-color: $dark;
      color: $green;
-     font-family: $sans;
-     letter-spacing: 4px;
+     font-family: $body;
+     
  }
  
  /* --------- Typography -----------  */
- h1, h2, h3, h4 {color: $purple;}
+ h1, h2, h3, h4 {color: $ltpurple; font-family: $sans; letter-spacing: 4px;}
  
  h1 {font-size: 2em; text-transform: uppercase;}
  h2 {font-size: 1.75em;}
@@ -31,8 +31,45 @@
  p {font-size: 1em;}
 
 /* --------- Navigation -----------  */
+.site-nav {
+    font-family: $body;
+    text-transform: uppercase;
+    
+    
+    li {
+        display: inline-block;
+        margin: 0 .5em;
+        font-size: 2em;
+    
+    
+        &::after {
+            display: inline;
+            font-family: $icons;
+            content: "\f02d";
+            margin-left: 1em;
+        }
+    
+        &:last-child::after {
+            display: none;
+        }
+    }
+    
+    a {
+       color: $green;
+       text-decoration: none;
+       
+       &:hover {
+           color: $purple;
+           border-bottom: 1px dotted $purple;
+       }
+       
+    }
+}
 
 /* --------- Header -----------  */
+.logoImg {
+    max-width: 25%;
+}
 
 /* --------- Pages -----------  */
 

@@ -4,12 +4,14 @@ function whiterabbit_styles() {
     //link the stylesheet
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '8.0.0');
     wp_register_style('newston', get_template_directory_uri() . '/fonts/newston/stylesheet.css');
-    wp_register_style('fontAwesome', get_template_directory_uri() . '/fonts/font-awesome/css/fontawesome.min.css');
-    wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), '0.1');
+    wp_register_style('google-font', 'https://fonts.googleapis.com/css?family=Carrois+Gothic');
+    wp_register_style('fontAwesome', get_template_directory_uri() . '/fonts/font-awesome/css/fontawesome-all.min.css');
+    wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '0.1');
 
     //enqueue the stylesheet
     wp_enqueue_style('normalize');
     wp_enqueue_style('newston');
+    wp_enqueue_style('google-font');
     wp_enqueue_style('fontAwesome');
     wp_enqueue_style('style');
 }

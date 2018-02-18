@@ -1,2 +1,2 @@
 # whiterabbit
-Custom WP theme for an independent publisher
+Custom WP theme for an independent publisher.

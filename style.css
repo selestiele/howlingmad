@@ -1,1 +1,86 @@
+/*
+    Theme Name: White Rabbit
+    Theme URI: 
+    Author: Elizabeth Bank
+    Author URI: elizabethmbank.info
+    Description: Theme for a publisher
+    Version: 0.0.1
+    License: GNU General Public License v2 or later
+    Licence URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags:
+    Text Domain: whiterabbit
+ 
+*/
+/* --------- Default Styles -----------  */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6em;
+  box-sizing: border-box; }
 
+body {
+  background-color: #101010;
+  color: #7BBE04;
+  font-family: "Carrois Gothic", sans-serif; }
+
+/* --------- Typography -----------  */
+h1, h2, h3, h4 {
+  color: #DA75FF;
+  font-family: "newstonregular", sans-serif;
+  letter-spacing: 4px; }
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: .8em;
+  color: #7BBE04; }
+
+h6 {
+  font-size: .6em; }
+
+p {
+  font-size: 1em; }
+
+/* --------- Navigation -----------  */
+.site-nav {
+  font-family: "Carrois Gothic", sans-serif;
+  text-transform: uppercase; }
+  .site-nav li {
+    display: inline-block;
+    margin: 0 .5em;
+    font-size: 2em; }
+    .site-nav li::after {
+      display: inline;
+      font-family: "Font Awesome 5 Free";
+      content: "\f02d";
+      margin-left: 1em; }
+    .site-nav li:last-child::after {
+      display: none; }
+  .site-nav a {
+    color: #7BBE04;
+    text-decoration: none; }
+    .site-nav a:hover {
+      color: #8A00BE;
+      border-bottom: 1px dotted #8A00BE; }
+
+/* --------- Header -----------  */
+.logoImg {
+  max-width: 25%; }
+
+/* --------- Pages -----------  */
+/* --------- Posts -----------  */
+/* --------- Media -----------  */
+
+/*# sourceMappingURL=style.css.map */

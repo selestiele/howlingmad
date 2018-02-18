@@ -23,6 +23,19 @@
     <div class="site-description">
         <h2><?php get_bloginfo('description'); ?></h2>
     </div> -->
+    
+    <nav>
+        <?php 
+          $args = array(
+               'theme_location' => 'primary-menu',
+               'container' => 'nav',
+               'container_class' => 'site-nav'
+          );
+          wp_nav_menu($args);
+        ?>
+        
+    </nav>
+    
 </header>
 
         
