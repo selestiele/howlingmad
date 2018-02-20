@@ -24,7 +24,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #101010;
+  background-color: red;
   color: #7BBE04;
   font-family: "Carrois Gothic", sans-serif; }
 
@@ -57,7 +57,21 @@ h6 {
 p {
   font-size: 1em; }
 
-/* --------- Navigation -----------  */
+/* --------- Social Navigation -----------  */
+.social li {
+  display: inline-block;
+  margin: 0 1em;
+  list-style-type: none; }
+  .social li a {
+    color: #DA75FF; }
+    .social li a::before {
+      font-family: "Font Awesome 5 Free";
+      font-size: 2em; }
+    .social li a:hover {
+      color: #8A00BE;
+      border-bottom: 1px dotted #DA75FF; }
+
+/* --------- Main Navigation -----------  */
 .site-nav {
   font-family: "Carrois Gothic", sans-serif;
   text-transform: uppercase; }
@@ -65,6 +79,11 @@ p {
     display: inline-block;
     margin: 0 .5em;
     font-size: 2em; }
+    .site-nav li::after {
+      content: "|";
+      margin-left: 1em; }
+    .site-nav li:last-child::after {
+      display: none; }
   .site-nav a {
     color: #7BBE04;
     text-decoration: none; }

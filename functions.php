@@ -26,7 +26,8 @@ function whiterabbit_menus () {
     ));
 
 }
-add_action('init', 'whiterabbit_menus')
+add_action('init', 'whiterabbit_menus');
+
 
 ?>
 
