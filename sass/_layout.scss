@@ -3,12 +3,16 @@
 
 
 /* --------- Default Styles -----------  */
-* {
+html {
      margin: 0;
      padding: 0;
      font-size: 18px;
      line-height: 1.6em;
      box-sizing: border-box;
+ }
+ *::before, 
+ *::after {
+     box-sizing: inherit;
  }
  
  body {
@@ -40,18 +44,6 @@
         display: inline-block;
         margin: 0 .5em;
         font-size: 2em;
-    
-    
-        &::after {
-            display: inline;
-            font-family: $icons;
-            content: "\f02d";
-            margin-left: 1em;
-        }
-    
-        &:last-child::after {
-            display: none;
-        }
     }
     
     a {
@@ -63,7 +55,16 @@
            border-bottom: 1px dotted $purple;
        }
        
+       &:active {
+           font-weight: 700;
+           border-bottom: 1px solid $green;
+       }
+       
     }
+}
+
+.sr-text {
+    display: none;
 }
 
 /* --------- Header -----------  */

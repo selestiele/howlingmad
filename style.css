@@ -12,12 +12,16 @@
  
 */
 /* --------- Default Styles -----------  */
-* {
+html {
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 1.6em;
   box-sizing: border-box; }
+
+*::before,
+*::after {
+  box-sizing: inherit; }
 
 body {
   background-color: #101010;
@@ -61,19 +65,18 @@ p {
     display: inline-block;
     margin: 0 .5em;
     font-size: 2em; }
-    .site-nav li::after {
-      display: inline;
-      font-family: "Font Awesome 5 Free";
-      content: "\f02d";
-      margin-left: 1em; }
-    .site-nav li:last-child::after {
-      display: none; }
   .site-nav a {
     color: #7BBE04;
     text-decoration: none; }
     .site-nav a:hover {
       color: #8A00BE;
       border-bottom: 1px dotted #8A00BE; }
+    .site-nav a:active {
+      font-weight: 700;
+      border-bottom: 1px solid #7BBE04; }
+
+.sr-text {
+  display: none; }
 
 /* --------- Header -----------  */
 .logoImg {
@@ -82,5 +85,14 @@ p {
 /* --------- Pages -----------  */
 /* --------- Posts -----------  */
 /* --------- Media -----------  */
+@supports (display: grid) {
+  @media screen and (min-width: 768px) {
+    .site-nav li::after {
+      display: inline;
+      font-family: "Font Awesome 5 Free";
+      content: "\f02d";
+      margin-left: 1em; }
+    .site-nav li:last-child::after {
+      display: none; } } }
 
 /*# sourceMappingURL=style.css.map */

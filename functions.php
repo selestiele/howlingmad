@@ -21,7 +21,8 @@ add_action('wp_enqueue_scripts', 'whiterabbit_styles');
 function whiterabbit_menus () {
     register_nav_menus(array (
         'primary-menu' => __('Primary', 'whiterabbit'),
-        'social-menu' => __('Social', 'whiterabbit')
+        'social-menu' => __('Social', 'whiterabbit'),
+        'footer-menu' => __('Footer', 'whiterabbit')
     ));
 
 }

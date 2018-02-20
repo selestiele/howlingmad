@@ -1,0 +1,26 @@
+@supports (display: grid) {
+    @media screen and (min-width: 768px) {
+        
+        .site-nav {
+        
+            li {
+            
+                &::after {
+                    display: inline;
+                    font-family: $icons;
+                    content: "\f02d";
+                    margin-left: 1em;
+                }
+    
+                &:last-child::after {
+                    display: none;
+                }
+            } 
+        } //end .site-nav
+        
+        
+        
+        
+    }  //end media query
+} //end feature query
+
