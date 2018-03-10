@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     Theme Name: White Rabbit
     Theme URI: 
@@ -24,7 +25,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: red;
+  background-color: #101010;
   color: #7BBE04;
   font-family: "Carrois Gothic", sans-serif; }
 
@@ -58,15 +59,33 @@ p {
   font-size: 1em; }
 
 /* --------- Social Navigation -----------  */
+.social {
+  clear: left;
+  float: right;
+  width: 70%; }
+
 .social li {
   display: inline-block;
   margin: 0 1em;
   list-style-type: none; }
   .social li a {
-    color: #DA75FF; }
+    color: #7BBE04;
+    text-decoration: none; }
     .social li a::before {
-      font-family: "Font Awesome 5 Free";
-      font-size: 2em; }
+      font-family: "Font Awesome 5 Brands";
+      font-size: 1em; }
+    .social li a[href*="wordpress.org"]::before, .social li a[href*="wordpress.com"]::before {
+      content: ""; }
+    .social li a[href*="facebook.com"]::before {
+      content: ""; }
+    .social li a[href*="twitter.com"]::before {
+      content: ""; }
+    .social li a[href*="instagram.com"]::before {
+      content: ""; }
+    .social li a[href*="amazon.com"]::before {
+      content: ""; }
+    .social li a[href*="linkedin.com"]::before {
+      content: ""; }
     .social li a:hover {
       color: #8A00BE;
       border-bottom: 1px dotted #DA75FF; }
@@ -78,7 +97,7 @@ p {
   .site-nav li {
     display: inline-block;
     margin: 0 .5em;
-    font-size: 2em; }
+    font-size: 1em; }
     .site-nav li::after {
       content: "|";
       margin-left: 1em; }
@@ -98,20 +117,56 @@ p {
   display: none; }
 
 /* --------- Header -----------  */
-.logoImg {
+.logo {
   max-width: 25%; }
+
+.logoImg {
+  width: 100%; }
+
+.site-branding {
+  display: none; }
 
 /* --------- Pages -----------  */
 /* --------- Posts -----------  */
 /* --------- Media -----------  */
 @supports (display: grid) {
   @media screen and (min-width: 768px) {
-    .site-nav li::after {
-      display: inline;
-      font-family: "Font Awesome 5 Free";
-      content: "\f02d";
+    .site-nav {
+      text-align: right;
+      margin: 0 2em 2em 0; }
+      .site-nav li {
+        font-size: 2em;
+        margin: 0; }
+        .site-nav li::after {
+          display: inline;
+          font-family: "Font Awesome 5 Free";
+          content: "";
+          margin: 0 .5em; }
+        .site-nav li:last-child::after {
+          display: none; }
+
+    .site-header {
+      position: relative;
+      width: 100%; }
+
+    .site-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
       margin-left: 1em; }
-    .site-nav li:last-child::after {
-      display: none; } } }
+
+    .site-branding {
+      text-align: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 1em; }
+      .site-branding .site-title {
+        font-size: 5em;
+        color: #7BBE04; }
+        .site-branding .site-title a {
+          text-decoration: none; }
+      .site-branding .site-description {
+        color: white; } } }
 
 /*# sourceMappingURL=style.css.map */

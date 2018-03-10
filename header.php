@@ -18,7 +18,7 @@
     
     <!-- Social Menu -->
         <?php 
-            $args = array (
+            $args1 = array (
                 'theme_location' => 'social-menu',
                  'container' => 'nav',
                  'container_class' => 'social',
@@ -26,17 +26,18 @@
                 'link_before' => '<span class="sr-text">',
                 'link_after' => '</span>'
             );
-            wp_nav_menu($args);
+            wp_nav_menu($args1);
         ?>
     <!-- end .social -->
+    <section class="site-branding">
+          <div class="site-title">
+              <h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name'); ?> </a></h1>
+          </div>
 
-    <!-- <div class="site-title">
-        <h1><?php get_bloginfo('name'); ?></h1>
-    </div>
-
-    <div class="site-description">
-        <h2><?php get_bloginfo('description'); ?></h2>
-    </div> -->
+          <div class="site-description">
+              <h2><?php bloginfo('description'); ?></h2>
+          </div>
+    </section> <!-- end .site-branding -->
     
    <!-- Main Header Menu  -->
         <?php 

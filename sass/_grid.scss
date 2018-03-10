@@ -2,22 +2,63 @@
     @media screen and (min-width: 768px) {
         
         .site-nav {
-        
+            
+            text-align: right;
+            margin: 0 2em 2em 0;
             li {
             
+                font-size: 2em;
+                margin: 0;
+       
                 &::after {
                     display: inline;
                     font-family: $icons;
-                    content: "\f02d";
-                    margin-left: 1em;
+                    content: $book;
+                    margin: 0 .5em;
                 }
     
                 &:last-child::after {
                     display: none;
                 }
+                
+                
             } 
         } //end .site-nav
         
+        .site-header {
+            position: relative;
+            width: 100%;
+        }
+        
+        .site-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: 1em;
+        }
+        
+        .site-branding {
+            text-align: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 1em;
+            
+            .site-title {
+                font-size: 5em;
+                color: $green;
+                
+                a {
+                   text-decoration: none;
+                }   
+            }
+            
+            .site-description {
+                color: white;
+            }
+            
+        
+        } 
         
         
         

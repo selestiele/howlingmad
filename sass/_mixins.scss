@@ -1,0 +1,25 @@
+        
+@mixin socialIcons {
+        
+            &[href*="wordpress.org"]::before,
+            &[href*="wordpress.com"]::before {
+            content: $wordpress;
+            }
+        
+            &[href*="facebook.com"]::before {
+                content: $facebook;
+            }
+            &[href*="twitter.com"]::before {
+                content: $twitter;
+            }
+            &[href*="instagram.com"]::before {
+                content: $instagram;
+            }
+            &[href*="amazon.com"]::before {
+                content: $amazon;
+            }
+            &[href*="linkedin.com"]::before {
+                content: $linkedin;
+            }
+            
+}

@@ -5,7 +5,7 @@ function whiterabbit_styles() {
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '8.0.0');
     wp_register_style('newston', get_template_directory_uri() . '/fonts/newston/stylesheet.css');
     wp_register_style('google-font', 'https://fonts.googleapis.com/css?family=Carrois+Gothic');
-    wp_register_style('fontAwesome', get_template_directory_uri() . '/fonts/font-awesome/css/fontawesome-all.min.css');
+    wp_register_style('fontAwesome', get_template_directory_uri() . '/fonts/font-awesome/css/fontawesome-all.css');
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '0.1');
 
     //enqueue the stylesheet
